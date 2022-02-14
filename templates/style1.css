@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color:cadetblue;
+    font-family: 'Ubuntu', sans-serif;
+    height: 60px;
+}
+header h2{
+    color: rgb(92, 80, 80);
+    text-align: center;
+    padding: 10px 0;
+}
+.container{
+    min-height: calc(100vh - 60px - 12vh);
+    background-color: azure;
+    
+}
+.slider{
+    height: 250px;
+    width: 750px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+.slider img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.btn1{
+    left:0;
+    padding: 16px;
+    transform: translateY(-300%) translateX(15vw);    
+}
+.btn2{
+    right: 0;
+    padding: 16px;
+    transform: translateX(81vw) translateY(270%);  
+}
+.about{
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid black;
+    min-height: 30vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.models{
+    font-family: 'Ubuntu', sans-serif;
+    width: 45vw;
+    border: 2px solid black;
+    min-height: 30vh;
+    margin: 20px;
+    padding: 16px;
+}
+.heart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 15px 0 15px;
+    
+}
+.heart img{
+    width: 50%;
+    height: 25%;    
+}
+.diabetes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 15px 0 15px;
+    
+}
+.diabetes img{
+    width: 50%;
+    height: 25%;    
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.chatbot{
+    font-family: 'Ubuntu', sans-serif;
+    width: 45vw;
+    border: 2px solid black;
+    min-height: 30vh;
+    margin: 20px;
+}
+footer{
+    background-color: cadetblue;
+    height: 12vh;
+}

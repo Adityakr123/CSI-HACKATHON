@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="{% static 'css/registrationstyle.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'register1style.css'%}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Heart Attack Prediction</title>
+</head>
+<body>
+
+
+<!--     <div class="banner">
+        <div class="sliderbackground">
+            <img src="images/img1.jpg" id="bgimg" class="smallheight">
+        </div>
+    </div> -->
+    <div class=" smallheight">
+        <!-- <div class="navbar" ><span style="position:relative;"><img src="logonew.png" class="logo"></span><span class="h1" style="align-self:center; width:65%;">Registration Portal</span></div> -->
+        
+        <div class="container-fluid">
+      
+        <a href="#"><img alt="logo" src="{% static 'Library/Logo.PNG'%}" width="170" height="90"></a>
+
+
+            <div class="row">              
+              <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 ">
+    <div class="container" style="margin-top: 5%; margin-left:25%;background-image: url(images/back.jpg);;opacity:65%">
+      <p style="text-align: center; padding-top:20px; color:white" class="h3"><u>Heart Attack Prediction</u></p><br>
+    <form  action="{% url 'hresult'%}" >
+      <div class="user-details">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div style="color:white"class="input-box">
+          <span class="details">Age</span>
+          <input style="color:red;font-size:20px;" type="text" name ="a1"  placeholder="Enter your age" required >
+        </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div style="color:white" class="input-box">
+          <span class="details">Sex For male type M for female type F</span>
+          <input style="color:red;font-size:20px;" type="text" name ="b1" placeholder="Enter your sex" required>
+        </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div style="color:white" class="input-box">
+          <span class="details">Chest Pain type on a scale of 0-3</span>
+          <input style="color:red;font-size:20px;" type="text" name ="c1"  placeholder="Enter Chest Pain type on a scale of 0-3 " required>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div style="color:white" class="input-box">
+          <span class="details">Resting Blood Pressure</span>
+          <input style="color:red;font-size:20px;" type="text" name ="d1" placeholder="Enter your Resting Blood Pressure" required>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div style="color:white" class="input-box">
+          <span class="details">Serum Cholestoral</span>
+          <input style="color:red;font-size:20px;" type="text" name ="e1" placeholder="Enter your Serum Cholestoral" required>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div  style="color:white" class="input-box">
+          <span class="details">Fasting blodd sugar type H for high and L for low</span>
+          <input style="color:red;font-size:20px;" type="text" name ="f1" placeholder="Enter your fasting blood sugar" required>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div  style="color:white" class="input-box">
+          <span class="details">Resting Electrocardiographic type H for high and L for low</span>
+          <input style="color:red;font-size:20px;" type="text" name ="g1" placeholder="Enter your resting electrocardiographic" required>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div  style="color:white" class="input-box">
+          <br>
+          <span class="details">Maximum heart rate achieved</span>
+          <input style="color:red;font-size:20px;" type="text" name ="h1" placeholder="Enter your maximum heart rate achieved" required>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div style="color:white" class="input-box">
+          <span class="details">Exercise induced angina type H for high and L for low?</span>
+          <input style="color:red;font-size:20px;" type="text" name ="i1" placeholder="Enter your exercise induced angina?" required>
+        </div>
+    </div> 
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+      <div style="color:white" class="input-box">
+        <br>
+        <span class="details">Oldpeak</span>
+        <input style="color:red;font-size:20px;" type="text" name ="j1" placeholder="Enter your oldpeak?" required>
+      </div>
+  </div> 
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+    <div style="color:white" class="input-box">
+      <span class="details">Peak exercise segment on scale of 0,1,2</span>
+      <input style="color:red;font-size:20px;" type="text" name ="k1" placeholder="Enter your peak exercise segment?" required>
+    </div>
+</div> 
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+  <div style="color:white" class="input-box">
+    <span class="details">Major Vessels on scale of 0,1,2,3</span>
+    <input style="color:red;font-size:20px;" type="text" name ="l1" placeholder="Enter your number of major vessels?" required>
+  </div>
+</div> 
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+  <div style="color:white" class="input-box">
+    <span class="details">Thal on scale of 0,1,2,3</span>
+    <input style="color:red;font-size:20px;" type="text" name ="m1" placeholder="Enter your value of thal?" required>
+  </div>
+</div> 
+
+
+        <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div style="color:white" class="input-box">
+          <span class="details">Password</span>
+          <input style="color:red;font-size:20px;" type="password" name ="Password" placeholder="Enter your password" required>
+        </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+          <div style="color:white" class="input-box">
+            <span style="font: style 20px;" class="details">Confirm Password</span>
+              <input style="color:red;font-size:20px;" type="password" name ="Confirm Password" placeholder="Confirm your password" required>
+              <?php
+          if($checkcopy==1){
+          echo"<h4 >Password and confirmpassword are same</h4>";
+          
+          }    
+        ?> -->
+      <!-- </div>
+    </div> -->
+    
+    
+  <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+    <div style="color:white" class="input-box">
+    <span style="font: style 20px;" class="details">Date Of Birth</span>
+    <input type="date" id="birthday" name="birthday">
+    </div>
+</div>  -->
+
+
+    </div>
+    </div>
+  <div class="button">
+    <input  type="submit" name="submit"value="CHECK!!!">
+   
+   
+  </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    height: 60px;
+    font-family: 'Ubuntu', sans-serif;
+}
+header h1{
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+}
+.container{
+    min-height: calc(100vh - 60px - 12vh);
+}
+.slider{
+    height: 500px;
+    margin-top: 12px;
+    position: relative;
+}
+.slider-image{
+    height: 100%;
+    position: absolute;
+}
+
+.slider-image img{
+    padding-left: 180px;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    
+}
+.nextBtn , .prevBtn{
+    background-color: #eee;
+    color: black;
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+}
+.prevBtn{
+    left: 0;
+}
+.nextBtn{
+    right: 0;
+}
+.navigation-dots{
+    display: flex;
+    height:32px;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0px;
+}
+.single-dot{
+    transform: translateY(-500%);
+    background-color: #333;
+    height: 16px;
+    width: 16px;
+    margin: 0px 8px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.single-dot.active{
+    background-color: #eee;
+}
+footer{
+    display: flex;
+    background-color: black;
+    /* height: 12vh; */
+    
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: center;
+    align-items: center;    
+}

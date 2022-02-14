@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+   <link rel="stylesheet" href="{% static 'register1style.css' %}"> 
+    <link href=" {% static 'CSS\registrationstyle.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Stroke Prediction</title>
+    
+
+
+</head>
+<body>
+
+
+<!--     <div class="banner">
+        <div class="sliderbackground">
+            <img src="images/img1.jpg" id="bgimg" class="smallheight">
+        </div>
+    </div> -->
+    <div class=" smallheight">
+        <!-- <div class="navbar" ><span style="position:relative;"><img src="logonew.png" class="logo"></span><span class="h1" style="align-self:center; width:65%;">Registration Portal</span></div> -->
+        <div class="topnav">
+            <a href="#"><img alt="logo" src="{% static 'Library\Logo.PNG'%}" width="170" height="90"></a>
+        </div>  
+        <div class="container-fluid" >
+      
+
+            <div class="row" >              
+              <div class="col-xs-4 col-sm-4 col-md-8 col-lg-8 ">
+    <div class="container width1" style="margin-top: 5%; margin-left:25%;background-image: url(images/back.jpg);;opacity:65%; ">
+      <p style="text-align: center; padding-top:20px; color:white" class="h3"><u>Stroke Prediction</u></p><br>
+    <form action="{% url 'result'%}">
+        {% csrf_token %}
+      <div class="user-details" >
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div style="color:white"class="input-box">
+          <span class="details">Gender type M for male and F for female</span>
+          <input style="color:red;font-size:20px;" type="text" name ="a"  placeholder="Enter your Gender" required >
+        </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div style="color:white" class="input-box">
+          <span class="details">Hypertension type Y for yes and N for no</span>
+          <input style="color:red;font-size:20px;" type="text" name ="b" placeholder="Do yo have hypertension" required>
+        </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div style="color:white" class="input-box">
+          <span class="details">Heart Disease type Y for yes and N for no</span>
+          <input style="color:red;font-size:20px;" type="text" name ="c"  placeholder="Do yo have any type of heart disease " required>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div style="color:white" class="input-box">
+          <span class="details">Married type Y for yes and N for no</span>
+          <input style="color:red;font-size:20px;" type="text" name ="d" placeholder="Are you married" required>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div  style="color:white" class="input-box">
+          <span class="details">Job type G for govt P for private  S for selfemployed And N for unemployed</span>
+          <input style="color:red;font-size:20px;" type="text" name ="e" placeholder="Enter your Job type" required>
+        </div>
+      </div>
+      
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div style="color:white" class="input-box">
+          <br>
+          <span class="details">Glucose level</span>
+
+          <input style="color:red;font-size:20px;" type="text" name ="f" placeholder="Enter your average glucose level" required>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div  style="color:white" class="input-box">
+          <br>
+          <span class="details">BMI</span>
+          <input style="color:red;font-size:20px;" type="text" name ="g" placeholder="Enter your BMI" required>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div  style="color:white" class="input-box">
+          <span class="details">Smoke  TYPE R for regularly, F for occassionally and N for no</span>
+          <input style="color:red;font-size:20px;" type="text" name ="h" placeholder="Do You Smoke" required>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div  style="color:white" class="input-box">
+          <br>
+          <span class="details">Age</span>
+          <input style="color:red;font-size:20px;" type="text" name ="i" placeholder="Enter your age" required>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div  style="color:white" class="input-box">
+          <span class="details">Resident type type O for own house and R for rented house</span>
+          <input style="color:red;font-size:20px;" type="text" name ="j" placeholder="resident type" required>
+        </div>
+      </div>
+
+
+    </div>
+</div>
+<div class="button">
+  <input  type="submit" name="submit"value="CHECK!!!">
+ 
+ 
+</div>
+</form>
+<a href="https://colab.research.google.com/drive/1DJ0gY5oirZLxnooh0a9MHacn9k04V6bi?usp=sharing">  <div class="button">
+    
+   
+   
+  </div></a>
+
+</body>
+</html>

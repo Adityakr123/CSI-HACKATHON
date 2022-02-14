@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet" href="Hackathon/style.css">
+<link rel="stylesheet" type="text/css" href="css/a.css">
+<!-- ChatBot -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+<!-- <link href="magic.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="Library/style.css" rel="stylesheet">
+<link href="Library/magic.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="Library/css/jquery.convform.css">
+<script type="text/javascript" src="Library/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="Library/js/jquery.convform.js"></script>
+<script type="text/javascript" src="Library/js/custom.js"></script>
+
+</head>
+<body style="background-color:cyan;">
+<!-- ChatBot -->
+
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+            <!-- <input type="text" name="domainName" data-conv-question="welcome message " data-no-answer="true"> 
+            <select data-conv-question="so lets start" name="startornot">
+                <option value="start">Start</option>
+                <option value="DigitalMarketing">No DONT START</option>
+            </select>
+            <div data-conv-fork="startornot">
+                <div data-conv-case="yes">
+       -->
+       <!-- <option value="WebDevelopment">Mental Fatigue ?</option>
+        <option value="DigitalMarketing">What if I failed this semester?</option>
+        <option value="phyf" style="font-size:large;">How to improve concentration?</option>
+        
+      </select> -->
+      <input type="text" name="domainName" data-conv-question="Greeting sir/ma'am I am a chatbot for CheckMeUp.com , I am here for a general health survey." data-no-answer="true"> 
+      <input type="text" name="domainName" data-conv-question="Do you know that
+      around 77 million people in india are diabetic and around 1.3 - 4.6 million people are prone to heart attacks.Let's
+      us have a simple questionnarie for the same." data-no-answer="true">  
+
+      <select data-conv-question="Lets Start?" name="cate" id="a">
+          <option value="Yes" >Yes</option>
+          <option value="end">no</option>
+         
+      </select>
+      <div data-conv-fork="cate">
+          <div data-conv-case="Yes">
+           
+            <select data-conv-question="One of the most common symptoms of diabetes is weeing oftenly because your body will
+            try to flush out the extra sugar. Do you feel the same issue?" name="category">
+             <option value="dyes">YES</option>
+              <option value="dno">NO</option>
+            </select>
+            <select data-conv-question=" Symptoms of diabetes includes feeling thirsty more oftenly. Do you have the same issue?" name="category">
+             <option value="dyes">YES</option>
+              <option value="dno">NO</option>
+            </select>
+            <select data-conv-question="Another symptom of diabetes is feeling a gently itchiness and thrush because the sugar in your body can create
+            an environment for fungal infection. Do you suffer from the same?" name="category">
+             <option value="dyes">YES</option>
+              <option value="dno">NO</option>
+            </select>
+            <select data-conv-question="If a person is diabetic his/her wounds a longer period of time to get healed completely because high sugar in 
+            your body can limit the nutrients and oxygen. Are you Facing the same issue?" name="category">
+             <option value="dyes">YES</option>
+              <option value="dno">NO</option>
+            </select>
+            <select data-conv-question="One of the most common symptoms for a heart disease is chest pain and chest discomfort pertaining for more than
+            30 minutes. Do you have the same issues?" name="category">
+             <option value="dyes">YES</option>
+              <option value="dno">NO</option>
+            </select>
+            <select data-conv-question="Slow heartbeat and shortness of breath is yet another important symptom of a heart disease. Are you facing
+            any of these?" name="category">
+             <option value="dyes">YES</option>
+              <option value="dno">NO</option>
+            </select>
+            <select data-conv-question="Another symptoms of heart disease is swelling of legs , abdomen and area around the eyes. Do you have
+            any of them?" name="category">
+             <option value="dyes">YES</option>
+              <option value="dno">NO</option>
+            </select>
+            <select data-conv-question="Skin Rashes and unsual spots on the skin could be a reason for heart disease. Do you have the same issue? 
+            " name="categy">
+             <option value="dyes">YES</option>
+              <option value="dno">NO</option>
+            </select>
+            <div data-conv-fork="categy">
+                <div data-conv-case="dyes">
+                    <input type="text" name="domainName" data-conv-question="YOU CAN HAVE OUR DIABETIES TEST " data-no-answer="true">   
+                    <!-- <input type="text" name="domainName" data-conv-question="YOU CAN HAVE OUR HEART ATTACK TEST" data-no-answer="true">  -->
+                    <select data-conv-question="End Converstion">
+                        <option value="Yes">End</option>
+                    </select>
+                </div>
+                <div data-conv-case="dno" data-conv-fork="first-question2">
+                    <!-- <input type="text" name="domainName" data-conv-question="YOU CAN HAVE OUR DIABETIES TEST " data-no-answer="true">    -->
+                    <input type="text" name="domainName" data-conv-question="YOU CAN HAVE OUR HEART ATTACK TEST" data-no-answer="true"> 
+                    <select data-conv-question="End Converstion">
+                        <option value="Yes">End</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <!-- <input type="text" name="domainName" data-conv-question="Ok have a great day" data-no-answer="true">  -->
+            <!-- <input type="text" name="domainName" data-conv-question="Ok have a great day" data-no-answer="true"> 
+            <select data-conv-question="Hello! How can I help you" name="category">
+             <option value="WebDevelopment">Mental Fatigue ?</option>
+              <option value="DigitalMarketing">What if I failed this semester?</option>
+              <option value="phyf" style="font-size:large;">How to improve concentration?</option>
+              
+            </select> 
+            <input type="text" name="domainName" data-conv-question="Ok have a great day" data-no-answer="true"> 
+            <select data-conv-question="Hello! How can I help you" name="category">
+             <option value="WebDevelopment">Mental Fatigue ?</option>
+              <option value="DigitalMarketing">What if I failed this semester?</option>
+              <option value="phyf" style="font-size:large;">How to improve concentration?</option>
+              
+            </select> 
+            <input type="text" name="domainName" data-conv-question="Ok have a great day" data-no-answer="true"> 
+            <select data-conv-question="Hello! How can I help you" name="category">
+             <option value="WebDevelopment">Mental Fatigue ?</option>
+              <option value="DigitalMarketing">What if I failed this semester?</option>
+              <option value="phyf" style="font-size:large;">How to improve concentration?</option>
+              
+            </select> -->
+          </div>
+          <div data-conv-case="end" data-conv-fork="first-question2">
+              <select data-conv-question="End Converstion">
+                  <option value="Yes">End</option>
+
+              </select>
+          </div>
+      </div>
+      
+      
+
+    </form>
+    </div>
+            <!-- <div data-conv-case="no">
+
+            </div> -->
+</div>
+  	
+	<!-- </div> -->
+<!-- </div> -->
+<!-- ChatBot end -->
+
+<!-- <header class="header" style="width:100%;"> -->
+    <!-- <header style="height:150px;"> 
+        <nav>
+            <button class="navbutton">Heart Attack Prediction</button>
+            <button class="navbutton">Diabatese Prediction</button>
+        </nav>
+    </header> -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:black; color: white; " >
+            <a class="navbar-brand logowith"  href="#"><img src="Library/UPES.png" style="width:100%;"></a>
+            <button class="navbar-toggler" style="background-color:white; border: white 2px solid;" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color: white;" ></span>
+            </button>
+      
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" style="color:white;">
+                <div class="nav navbar-nav" id="nav-text" style="text-align: center;">
+                  <span class="marginbottomn "><a href="heart.html"><button class="buttonbelowpics rightmarginnav" style="margin-top:4%;border-color:transparent;padding-right:5px; padding-left:5px;">Heart Attack Prediction</button> </a></span>             
+      
+                  <span class="marginbottomnav"><a href="sugar.html"><button class="buttonbelowpics rightmarginnav"style="margin-top:4%;border-color:transparent ;padding-right:5px; padding-left:5px;" >Dibatese Prediction</button> </a></span>             
+
+               
+      
+                </div>
+            </div>
+        </nav>
+      </header>
+	<!-- <div class="container-fluid">
+		<div class="row d-flex justify-content-between">
+			<div class="col-md-auto">
+			</div>
+			
+		</div>		
+	</div> -->
+<!-- </header>	  -->
+<div style="background-color:#F652A0; margin-top:-10px; ">
+    <h1 style="text-align: center; color:white" class="heading"><b>Welcome To CheckMeUp.com</b></h1>
+                <p style="text-align: center;  font-size:30px;margin-right:5%;margin-left:5%;padding-bottom:5%;padding-top:5%; color:cyan">Do you know that around 77 milliion people in India are
+                diagoned with diabetes and around 1.3 to 4.6 million people are prone to heart disease!
+                That's a huge number! But do you know that most of these people are not aware about their
+                disease which could lead to critical situation in future.<span id="dots">...</span><span id="more"> Also , life in India is indeed
+                a busy schedule due to which a major proportion of our population neglect going for a checkup
+                dur to time and distance issue.
+                
+                Our Interface is a solution! This interface contains
+                a chatbot that is used to take a general survey and also makes the interaction between
+                the user and the interface smooth. This interface contains two links using which you 
+                can take a survey which would ask you some basic questions based on which it will calculate
+                the possibilities of the user with diagnosed with the disease.</p></span>
+                <button onclick="myFunction()" id="myBtn" class="rbutton">Read more</button>
+        </div>
+    <div style="margin-left:20%; margin-top:3%;"><img src="Hackathon/Diabetes1.jpg" style="width:80%;"></div>
+
+
+<footer>
+    <p>Copyright &copy; CheckMeUp.com</p>
+</footer>
+ 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<script  src="javascript.js"></script>
+
+<script type="text/javascript">
+   
+	portfolioList = document.querySelectorAll('.portfolio-box');
+	portfolioList.forEach(function(portfolioPic) {
+		portfolioPic.addEventListener('click',function(){
+			bg = this.style.backgroundImage;
+			document.getElementById('port_pop_pic_bg').classList.add("active")
+			document.getElementById('port_pop_pic').style.backgroundImage = bg
+			document.getElementById('port_pop_pic').classList.add("active")
+		});	
+	})
+	document.getElementById('port_pop_pic_bg').addEventListener('click',function(){
+			document.getElementById('port_pop_pic_bg').classList.remove("active")
+			document.getElementById('port_pop_pic').classList.remove("active")
+	})
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+</script>
+
+</body>
+</html>

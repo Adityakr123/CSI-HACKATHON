@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+   <link rel="stylesheet" href="{% static 'register1style.css' %}"> 
+    <link href=" {% static 'CSS\registrationstyle.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Diabetes Prediction</title>
+    
+
+
+</head>
+<body>
+
+
+<!--     <div class="banner">
+        <div class="sliderbackground">
+            <img src="images/img1.jpg" id="bgimg" class="smallheight">
+        </div>
+    </div> -->
+    <div class=" smallheight">
+        <!-- <div class="navbar" ><span style="position:relative;"><img src="logonew.png" class="logo"></span><span class="h1" style="align-self:center; width:65%;">Registration Portal</span></div> -->
+        <div class="topnav">
+            <a href="#"><img alt="logo" src="{% static 'Library\Logo.PNG'%}" width="170" height="90"></a>
+        </div>  
+        <div class="container-fluid" >
+      
+
+            <div class="row" >              
+              <div class="col-xs-4 col-sm-4 col-md-8 col-lg-8 ">
+    <div class="container width1" style="margin-top: 5%; margin-left:25%;background-image: url(images/back.jpg);;opacity:65%; ">
+      <p style="text-align: center; padding-top:20px; color:white" class="h3"><u>Dibatese Prediction</u></p><br>
+    <form  action="{% url 'sresult'%}">
+        {% csrf_token %}
+        <form >
+          <div class="user-details">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div style="color:white"class="input-box">
+              <span class="details">No of time Pregnant :</span>
+              <input style="color:red;font-size:20px;" type="text" name ="a2"  placeholder="No of times you were Pregnant"  >
+            </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div style="color:white" class="input-box">
+              <span class="details">Glucose Level :</span>
+              <input style="color:red;font-size:20px;" type="text" name ="b2" placeholder="Enter your glucose Level" >
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div style="color:white" class="input-box">
+              <span class="details">Blood Pressure :</span>
+              <input style="color:red;font-size:20px;" type="text" name ="c2"  placeholder="Enter your blood pressure " >
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div style="color:white" class="input-box">
+              <span class="details">Skin Thickness (Triceps)</span>
+              <input style="color:red;font-size:20px;" type="text" name ="d2" placeholder="Enter your skin thickness " >
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div style="color:white" class="input-box">
+              <span class="details">Insulin Intake</span>
+              <input style="color:red;font-size:20px;" type="text" name ="e2" placeholder="Enter your insulin intake" >
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div  style="color:white" class="input-box">
+              <span class="details">Body Mass Index</span>
+              <input style="color:red;font-size:20px;" type="text" name ="f2" placeholder="Enter your BMI" >
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div  style="color:white" class="input-box">
+              <span class="details">Diabetes Pedigree Function</span>
+              <input style="color:red;font-size:20px;" type="text" name ="g2" placeholder="Enter your DPF" >
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div  style="color:white" class="input-box">
+              <span class="details">Age</span>
+              <input style="color:red;font-size:20px;" type="text" name ="h2" placeholder="Enter your age" >
+            </div>
+          </div>
+    
+    
+            <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <div style="color:white" class="input-box">
+              <span class="details">Password</span>
+              <input style="color:red;font-size:20px;" type="password" name ="Password" placeholder="Enter your password" required>
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+              <div style="color:white" class="input-box">
+                <span style="font: style 20px;" class="details">Confirm Password</span>
+                  <input style="color:red;font-size:20px;" type="password" name ="Confirm Password" placeholder="Confirm your password" required>
+                  <?php
+              if($checkcopy==1){
+              echo"<h4 >Password and confirmpassword are same</h4>";
+              
+              }    
+            ?> -->
+          <!-- </div>
+        </div> -->
+        
+        
+      <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+        <div style="color:white" class="input-box">
+        <span style="font: style 20px;" class="details">Date Of Birth</span>
+        <input type="date" id="birthday" name="birthday">
+        </div>
+    </div>  -->
+    
+    
+        </div>
+        </div>
+      <div class="button">
+        <a href="https://colab.research.google.com/drive/1NFVrEUxJRz12kIank2JUSBTPkje1Tdlx?usp=sharing"><input  type="submit" name="submit"value="CHECK!!!"></a>
+       
+       
+      </div>
+    </form>
+<a href="https://colab.research.google.com/drive/1DJ0gY5oirZLxnooh0a9MHacn9k04V6bi?usp=sharing">  <div class="button">
+    
+   
+   
+  </div></a>
+
+</body>
+</html>
