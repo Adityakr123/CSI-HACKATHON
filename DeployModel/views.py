@@ -64,13 +64,17 @@ def result(request):
    
     # print(lis)
     ans=cls.predict([lis])
+
+    
     if ans==1:
         ans="YOU HAVE HIGH CHANCE OF  HAVING STROKE"
+        an="Lower Your Blood Pressure. \nStay Away From Smoking.\n Manage Your Heart.\n Cut the Booze.\n Control Your Diabetes.Exercise.\n Eat Better Foods.\n Watch the Cholesterol."
         
     else:
         ans="YOU  HAVE MINIMAL CHANCES TO HAVE STROKE"
+        an=" "
          
-    return render(request,"result.html",{'ans':ans})
+    return render(request,"result.html",{'ans':ans,'an':an})
 def stroke(request):
     return render(request,"stroke.html")
 def heart(request):
@@ -93,9 +97,9 @@ def sresult(request):
     list1.append(float(request.GET['h2']))
     ans2=cls2.predict([list1])
     if ans2==1:
-        ans2="You are prone to dibatese"
+        ans2="You are prone to diabetes"
     else:
-         ans2="You are not prone to dibatese"
+         ans2="You are not prone to diabetes"
 
 
     return render(request,"sresult.html",{'ans2':ans2})
@@ -142,6 +146,7 @@ def hresult(request):
     ans1=cls1.predict([list])
     if ans1==1:
         ans1="You are prone to Heart Attack"
+
     else:
          ans1="You are not prone to Heart Attack"
 
